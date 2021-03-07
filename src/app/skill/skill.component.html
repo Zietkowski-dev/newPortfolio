@@ -1,0 +1,45 @@
+<app-navbar ></app-navbar>
+<div class="ng-container">
+    <div class="img"  [ngStyle.gt-md] = " {'backgroundSize': '220vh'} "></div>
+    <div #qwe  [@opens] class="circles"
+    fxLayout.lt-sm="column"
+    fxLayoutAlign.lt-sm="space-between center"
+    [ngStyle.lt-sm] = " {'width': '100%'} "
+
+    fxLayout.lt-md="row wrap"
+    fxLayoutAlign.lt-md="center center"
+    [ngStyle.lt-md] = " {'position':'relative', 'padding': '20px','width': '50%', 'margin':'0 auto'} "
+
+    fxLayout.lt-lg="row wrap"
+    fxLayoutAlign.lt-lg="center center"
+    [ngStyle.lt-lg] = " {'position':'relative', 'height': '70%','width': '950px', 'margin':'0 auto'} "
+
+    fxLayout.lt-xl="row wrap"
+    fxLayoutAlign.lt-xl="center center"
+    [ngStyle.lt-xl] = " {'position':'relative','height': '100%','width': '1200px', 'margin':'0 auto'} "
+
+    fxLayout.gt-md="row wrap"
+    fxLayoutAlign.gt-md="center center"
+    [ngStyle.gt-md] = " {'position':'relative','height': '100%','width': '1200px', 'margin':'0 auto'} "
+    >
+    <div  class="description"   [ngStyle.lt-sm] ="{'width': '80%','top':'60%'}" [ngStyle.lt-md] ="{'width': '70%','top':'90%'}"  [ngStyle.lt-lg] ="{'width': '60%','top':'50%'}"  [ngStyle.gt-md] ="{'top':'50%'}" >
+        <div #dataContainer ></div>
+    </div>
+        <ng-container   *ngFor="let skill of propertyList; let i = index">
+            <div class="circle"
+            [ngStyle.gt-md] = " {'height': '190px','width': '190px'} "
+            [ngStyle.lt-md] = " {'margin': '20px'} "
+            >
+                <p class="skill"  (click)="showDescription(i)" [@up]="upSkill" class="before" *ngIf="i > 4 ; else behind"  attr.data-index="{{ i }}">{{skill.name}}
+                </p>
+            </div>
+            <ng-template #behind >
+                <p (click)="showDescription(i)" [@down]="upSkill" class="behind" attr.data-index="{{ i }}">{{skill.name}}
+                </p>
+            </ng-template>
+        </ng-container>
+        
+       <div [@opens]></div>
+    </div>
+</div>
+

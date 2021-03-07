@@ -1,0 +1,100 @@
+.ng-container{
+    background-image: url(../../assets/intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    div.front{
+        height: 100%;
+        
+        .rectangular{
+            background-color: rgba(#114e49, .5);
+            border-right:1px solid black;
+        }
+        .h1{
+            text-transform: uppercase;
+            letter-spacing: .3px;
+            font-size: clamp(1.5rem, 3vw,4rem);
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            margin: 10px;
+            color: white;
+            width: 50%;
+            letter-spacing: 0.05em;
+            background-color: transparent;
+        }
+        .h2{
+            box-sizing: border-box;
+            margin: 0 ;
+            padding: 0;
+            padding: 20px;
+            position: fixed;
+            top: 60%;
+            left: 40%;
+            h2{
+                padding: 5px;
+                font-size: clamp(1.2rem, 2vw,5rem);
+                letter-spacing: 0.05em;
+            }
+        }
+        .btn{
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            height: 40px;
+            width: 150px;
+            cursor: pointer;
+            transition:0.5s;
+            margin-top: 50px;
+            box-sizing: border-box;
+                a{
+                margin: 0;
+                padding: 0;
+                transition: .5s;
+                line-height: 40px;
+                text-decoration: none;
+                display: block;
+                color: white;
+                text-align: center;
+                font-size: 18px;
+                &:hover{
+                    font-size: 20px;
+                    color: rgba(65, 243, 228);
+                    box-shadow: 0 5px 15px  rgba(0, 255, 234, 1);
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom:0;
+                    right: 0;
+                    width: 10%;
+                    height: 10%;
+                    border-bottom: 2px solid rgba(0, 255, 234, 1);
+                    border-right: 2px solid rgba(0, 255, 234, 1);
+                    transition: all 0.3s;
+                    box-sizing: border-box;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 10%;
+                    height: 10%;
+                    border-top: 2px solid rgba(0, 255, 234, 1);
+                    border-left: 2px solid rgba(0, 255, 234, 1);
+                    transition: all 0.3s;
+                    box-sizing: border-box;
+                }
+                &:hover::before {
+                    width: 105%;
+                    height: 105%;
+                }
+                &:hover::after {
+                    width: 105%;
+                    height: 105%;
+                }
+            }
+        }
+    }
+}

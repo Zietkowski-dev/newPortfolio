@@ -1,0 +1,115 @@
+@mixin a{
+    a{
+        letter-spacing: .3px;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-shadow: 0px 0px 8px 7px rgb(17, 78, 73);
+        background-color: rgba(17,78,73, .5);
+        &:nth-last-of-type(1){
+        margin-right: 20px;
+        }
+        &:hover{
+            background-color: rgb(15, 66, 62);
+            box-shadow: none;
+            color: white;
+        }
+        &.active{
+            background-color: rgb(15, 66, 62);
+            color: white;
+            box-shadow: none;
+        }
+    }
+}
+
+mat-toolbar{
+    box-shadow: none;
+    // background-color: transparent;
+    position: relative;;
+    z-index: 3;
+    background-color: rgba(0,0,0,.6);
+    box-shadow: 0px 0px 8px 7px rgb(17, 78, 73);
+    // mat-toolbar-row{
+        // position: fixed;
+        // background-color: rgba(0,0,0,.6);
+        // box-shadow: 0px 0px 8px 7px rgb(17, 78, 73);
+        span{
+            flex:1 1 auto;
+            a{
+                padding: 8px 16px;
+                letter-spacing: 0.3px;
+                text-decoration: none;
+                color: white;
+                font-weight: 100;
+                box-shadow: 0px 0px 8px 7px rgb(17, 78, 73);
+                background-color: rgba(17, 78, 73, .5);
+            }
+        };
+        button{
+            color: white;
+        }
+        div{
+            margin-right: 100px;
+            margin-left: 20px;
+            @include a;
+        }
+    // }
+}
+mat-sidenav-container{
+    // position: fixed;
+    // height: 100px;
+    // background-color: transparent;
+    // z-index: 101;
+    mat-sidenav{
+        background: none;
+        width: 100%;
+        @include a;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active{
+    color: lightgray;
+}
+
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+mat-toolbar {
+    border-radius: 3px;
+}
+
+@media(max-width:959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}
+
+
+// .sidenav-container {
+//   height: 100%;
+// }
+
+// .sidenav {
+//   width: 200px;
+// }
+
+// .sidenav .mat-toolbar {
+//   background: inherit;
+// }
+
+// .mat-toolbar.mat-primary {
+//   position: sticky;
+//   top: 0;
+//   z-index: 1;
+// }
+
+
+// zrob z Inde bo w sklil nie działa

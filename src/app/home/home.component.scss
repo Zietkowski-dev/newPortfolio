@@ -1,0 +1,131 @@
+div.ng-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(17, 78, 73);
+    box-shadow: 9px 88px 92px 42px rgb(17 78 73);
+
+  .img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url(../../assets/Omnie.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.9;
+    margin: 0 auto;
+    top: 0;
+  }
+    
+    div.twoColumn{
+        width: 60%;
+        min-height: 100vh;
+        div.myFoto{
+            
+            width: 70%;
+            background-color: red;
+            height: 20%;
+            margin-bottom: 30px;
+           
+            div.imgs{
+                height: 100%;
+                width: 50%;
+                margin: 0 auto;
+                background-image: url(../../assets/Officially-min.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                z-index: 1;
+                position: relative;
+                
+                &:hover{
+                    box-shadow: 0px -5px 10px 0px rgb(36, 129, 120);
+                    cursor: pointer;
+                }
+            }
+        }
+        div.aboutMe{
+            width: 70%;
+            height: 75%;
+            z-index: 1;
+            font-size: 18px;
+            line-height: 150%;
+            p{
+            letter-spacing: .3px;
+            padding: 20px;
+            text-align: justify;
+            color: white;
+            letter-spacing: .9px;
+            }
+            p:first-of-type{
+                transform: rotate(5deg);
+                margin-bottom: 40px;
+                background-color: rgba(17, 78, 73,.5);
+            }
+            .btn-slice {
+                padding: 2px 15px;
+                 border: 2px solid #ffffff;
+                color: #ffffff;
+                letter-spacing: 0.3px;
+                position: relative;
+               
+                background-color: rgba(17,78,73, .5);
+                &:hover .top {
+                    top: -5px;
+                    transition-delay:0.15s;
+                }
+                &:hover .bottom {
+                    bottom: -5px;
+                    transition-delay:0.15s;text-align: center;
+                }
+                &:before{
+                    content: '';
+                    height: 1px;
+                    width: 60px;
+                    background-color: #ffffff;
+                    position: absolute;
+                    margin-top: 16px;
+                    right: -40px;
+                    transition: all 200ms ease-in;
+                }
+                &:hover:before{
+                    width: 120%;
+                    box-shadow: 1px 1px 1px white;
+                }
+                &:hover, &:focus, &:active {
+                    box-shadow: 1px 1px 10px white;
+                }
+                div.top  {
+                    position: relative;
+                    height: 16px;
+                    overflow: hidden;
+                    top: 0;
+                    transition: all 20ms ease-in;
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                div.bottom  {
+                    position: relative;
+                    height:15px;
+                    overflow: hidden;
+                    bottom: 0;
+                    font-size: 15px;
+                    width: 120%;
+                    transition: all 20ms ease-in;
+                    span {
+                        top: -15px;
+                        position: absolute;
+                        left: 0px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            p:last-of-type{
+                margin-top: 40px;
+                transform: rotate(-5deg);
+                background-color: rgba(17, 78, 73,.5);
+            }
+        }
+    }
+}

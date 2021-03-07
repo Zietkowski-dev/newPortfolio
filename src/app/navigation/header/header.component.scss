@@ -1,0 +1,36 @@
+mat-toolbar {
+    border-radius: 3px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(4, 102, 94, 0.671);
+    div{
+        margin: 10px;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .active-link{
+            color: #41f3e4;
+            box-shadow: 0 5px 15px  rgba(0, 255, 234, 1);
+        }
+        a:hover, a:active{
+            color: #41f3e4;
+            box-shadow: 0 5px 15px  rgba(0, 255, 234, 1);
+        }
+        
+        .navigation-items{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        
+        }
+    }
+}
+
+@media(max-width:959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}

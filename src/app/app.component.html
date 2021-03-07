@@ -1,0 +1,74 @@
+    <mat-sidenav-container >
+        <mat-sidenav [ngStyle] = " {'width': '50%','height': '50%'} " #sidenav role="navigation">
+           <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+           <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+            <main>
+                <router-outlet ></router-outlet>
+            </main>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<body class="qwe">
+    <ngx-loading-bar [color]="'red'" ></ngx-loading-bar>
+<app-navbar ></app-navbar>
+</body> -->
+
+    <!-- <router-outlet ></router-outlet> -->
+
+    <!-- <mat-sidenav-container > -->
+        <!-- <mat-sidenav #sidenav role="navigation">
+
+        </mat-sidenav> -->
+        <!-- <mat-sidenav-content> -->
+           
+            <!-- <main> -->
+                <!-- <router-outlet ></router-outlet> -->
+            <!-- </main> -->
+        <!-- </mat-sidenav-content> -->
+    <!-- </mat-sidenav-container> -->
+  
+
+
+<!-- <app-footer></app-footer> -->
+
+
+<!-- zrob responsywne menu 
+https://www.youtube.com/watch?v=SerD960-du8&t=375s&ab_channel=CodeMaze
+-->
+
+
+
+<!-- 
+    -zrób semnatykę strony, tak bay nawigacja byla we wszystkich podstronach wraz z intro;
+https://www.youtube.com/watch?v=SerD960-du8&ab_channel=CodeMaze
+https://stackblitz.com/angular/ebjnokjenbd?file=src%2Fapp%2Fsidenav-responsive-example.ts
+
+    -zrób tka aby nawigajca nie była w intro, a pojawiała się we wszystkich innych podstronach
+    - ponizej lista linków:
+https://stackoverflow.com/questions/43118592/angular-2-how-to-hide-nav-bar-in-some-components
+https://loiane.com/2017/08/angular-hide-navbar-login-page/
+https://stackoverflow.com/questions/42423403/angular-2-notify-a-route-component-of-an-event-in-the-app-component/42423890#42423890
+(sprawdz MessengerService)
+https://stackoverflow.com/questions/48073057/open-close-sidenav-from-another-component/48076331#48076331
+-->

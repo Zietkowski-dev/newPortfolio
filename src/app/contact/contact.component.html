@@ -1,0 +1,42 @@
+<div class="ng-container">
+    <div class="foto"></div>
+     <div class="contactInfo" @enterShowing
+     >
+        <div class="twoColumn"
+        fxLayout.lt-sm="column"
+        fxLayoutAlign.lt-sm="space-between center"
+        [ngStyle.lt-sm] = " {'height':'100vh','padding': '60px'} "
+        fxLayout.lt-md="column"
+        fxLayoutAlign.lt-md="space-around "
+        [ngStyle.lt-md] = " {'height':'100vh','paddingTop':'60px'} "
+        fxLayout.lt-lg="column"
+        fxLayoutAlign.lt-lg="space-around center"
+        [ngStyle.lt-lg] = " {'height':'100vh','paddingTop':'80px'} "
+
+        fxLayout.gt-md="row wrap"
+        fxLayoutAlign.gt-md="center center"
+        [ngStyle.gt-md] = " {'height': '100vh','width': '100vw'} ">
+
+            <div  @enterChild  [ngStyle.gt-md] = " {'width': '100%'} "   fxLayout.gt-md="row wrap"     fxLayoutAlign.gt-md="center center">
+                <h2>Zapraszam do kontaktu</h2>
+                <div class="ASD" [ngStyle.gt-md] = " {'width': '30%', 'height':'30%'} " ><img src="../../assets/Officially-min.png" alt=""  ></div>
+            </div>
+            <div  @enterChild [ngStyle.gt-md] = " {'width': '30%'} ">
+                <p>Email</p>
+                <i class="fas fa-envelope"></i>
+                <p    [ngStyle.lt-sm] = " {'transform': 'translateX(-60px)'} " >damianzietkowski055@gmail.com</p>
+            </div>
+            <div  @enterChild [ngStyle.gt-md] = " {'width': '30%'} ">
+                <p>linkedin</p>
+                <i class="fab fa-linkedin"></i>
+                <p>link do linkedin</p>
+            </div>
+            <div  @enterChild [ngStyle.gt-md] = " {'width': '30%'} ">
+                <p>Github</p>
+                <i class="fab fa-github"></i>
+                <p><a href="https://github.com/DamianZiet">github.com/DamianZiet</a> </p>
+            </div>
+      </div>
+</div>
+</div>
+

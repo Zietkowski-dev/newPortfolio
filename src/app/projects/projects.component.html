@@ -1,0 +1,62 @@
+    <div class="ng-container" @biggerBackground >
+        <div class="foto" [@childBackground]></div>
+        <div class="projects"  
+
+        fxLayout.lt-sm="column"
+        fxLayoutAlign.lt-sm="space-between center"
+
+        fxLayout.lt-md="row wrap"
+        fxLayoutAlign.lt-md="space-around space-around"
+        [ngStyle.lt-md] = " {'padding': '70px'} "
+
+        fxLayout.lt-lg="row wrap"
+        fxLayoutAlign.lt-lg="space-between center"
+     
+
+        fxLayout.lt-xl="row wrap"
+        fxLayoutAlign.lt-xl="center center"
+        [ngStyle.lt-xl] = " {'height': '100%','width': '50%', 'margin': '0 auto',     'paddingTop': '75px'} "
+
+        fxLayout.gt-md="row wrap"
+        fxLayoutAlign.gt-md="space-between center"
+        [ngStyle.gt-md] = " {'height': '50%','width': '50%'} "
+        >
+
+            <div  [@childAnimation] >
+                <img src="" alt="">
+                <p></p>
+                <a href="#">Live</a>
+                <a href="#">GitHub</a>
+            </div>
+            <div [@childAnimation] >
+                <img src="" alt="">
+                <p></p>
+                <a href="#">Live</a>
+                <a href="#">GitHub</a>
+            </div>
+            <div [@childAnimation]>
+                <img src="" alt="">
+                <p></p>
+                <a href="#">Live</a>
+                <a href="#">GitHub</a>
+            </div>
+            <div [@childAnimation]>
+                <img src="" alt="">
+                <p></p>
+                <a href="#">Live</a>
+                <a href="#">GitHub</a>
+            </div>
+            <div [@childAnimation]>
+                <img src="" alt="">
+                <p></p>
+                <a href="#">Live</a>
+                <a href="#">GitHub</a>
+            </div>
+            <div [@childAnimation]>
+                <img src="" alt="">
+                <p></p>
+                <a href="#">Live</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </div>

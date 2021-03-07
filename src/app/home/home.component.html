@@ -1,0 +1,71 @@
+  <div class="ng-container" [@showContainer]
+  fxLayout.lt-sm="column"
+  fxLayoutAlign.lt-sm="start center"
+
+  fxLayout.lt-md="column"
+  fxLayoutAlign.lt-md="center"
+  [ngStyle.lt-md]="{'width': '100%'}"
+
+  fxLayout.lt-lg="column"
+  fxLayoutAlign.lt-lg="center"
+  [ngStyle.lt-lg]="{'width': '100%'}"
+
+  fxLayout.gt-md="column"
+  fxLayoutAlign.gt-md="center"
+  [ngStyle.gt-md]="{'width': '100%'}"
+  >
+
+  <div class="img" ></div>
+
+    <div class="twoColumn"
+    fxLayout.lt-sm="column"
+    fxLayoutAlign.lt-sm="center center"
+
+    fxLayout.lt-md="column"
+    fxLayoutAlign.lt-md="center center"
+    [ngStyle.lt-md]="{'width': '100%'}"
+
+    fxLayout.lt-lg="column"
+    fxLayoutAlign.lt-lg="center center"
+    [ngStyle.lt-lg]="{'width': '100%'}"
+
+    fxLayoutAlign.gt-md="center center"
+    [ngStyle.gt-md]="{'width': '100%'}"
+    >
+
+<div class="myFoto"    [ngStyle.lt-sm]="{'height':'20%'}" [ngStyle.lt-md]="{'height': '40%'}"  [ngStyle.gt-md]="{'height':'100%', 'width': '30%', 'margin':'0 100px 0 250px'}">
+  <div class="imgs"  (click)='changeFoto()' [@changeDivSize]=currentState   [ngStyle.lt-sm]="{'width': '50%'}"  [ngStyle.lt-md]="{'width': '30%'}" [ngStyle.lt-lg]="{'width': '30%'}" [ngStyle.gt-md]="{'height':'30%','top':'25%','width': '55%'}"
+  >
+  </div>
+</div>
+
+      <div class="aboutMe" [@childParent]   [ngStyle.lt-sm]="{'width': '90%', 'height':'65%'}"  [ngStyle.lt-lg]="{'width': '60%', 'height':'40%'}" 
+      fxLayout.gt-md="column"
+      fxLayoutAlign.gt-md="center start"
+      [ngStyle.gt-md]="{'top':'50%', 'margin':'0 250px 0 0'}"
+      >
+        <p [@childUp] >Pod koniec 2018 roku wziąłem udział w konferencji „Hello IT” w Poznaniu. Temat ten na tyle mnie zainteresował, że postanowiłem uczyć się frontendu i tworzyć pierwsze strony. 
+          Zacząłem pisać pierwsze linijki w językach Html i Css,a poźniej w JavaScript oraz Angularze. Obecnie jestem na etapie rozpoczęcia uczenia się bibilioteki RxJS. 
+        </p>
+          <a  [@childMiddle] class="btn-slice" href="#"
+          [ngStyle.lt-sm]="{'width': '70%'}"
+
+          fxLayout.lt-lg="column"
+          fxLayoutAlign.lt-lg="start start"
+          [ngStyle.lt-lg]="{'width': '55%'}"
+
+          fxLayout.gt-md="column"
+          fxLayoutAlign.gt-md="start start"
+          [ngStyle.gt-md]="{'width': '40%'}"
+
+          >
+            <div [@childMiddle] class="top"><a href=""></a> <span>Zobacz ostani projekt</span></div>
+            <div [@childMiddle] class="bottom"><span>Zobacz ostani projekt</span></div>
+          </a>
+        <p  [@childDown] >
+          Od wejścia w świat frontendu mineły już 2 lata i nadal mam chęć i ciekawość rozwijania się. Daje mi to motywację, która pozwala mi zrobić następny krok. Chciałbym przyspieszyć swój rozwój dlatego poszukuję swojej pierwszej zawodowej pracy. 
+          Wiem, że dzięki pracy będę mógł znacznie przyspieszyć rozwijanie swoich umiejętności, a także pozwoli mi to spojrzeć znacznie szerzej na frontend. Chciałbym dołączyć do zespołu, który podąża w tę samą stronę co Ja.
+        </p>
+      </div>
+    <div>
+  </div>

@@ -1,0 +1,15 @@
+<div class="ng-container" @start 
+[ngStyle] = " {'height': '100vh' ,'width': '100vw'} "
+>
+        <div class="front"
+        fxLayout="row"
+        >
+                <ng-container *ngFor="let div of divs; let i = index">
+                        <div @rectangularAnimation  id={{i}}  [ngClass]='rectangular' #divElement [ngStyle] = " {'flex-grow':'1'} ">
+                        </div>
+                </ng-container>
+                <div @textH1 class="h1" [ngStyle.sm]="{'top':'10%'}"><h1>Cześć, jestem Damian i szukam pracy jako Junior Frontend Developer </h1></div>
+                <div @textH2 class="h2" [ngStyle.sm]="{'top':'55%', 'left':'30%'}"><h2>Zapraszam do przejrzenia mojego portfolio</h2> </div>
+                <div @btn class="btn"   [ngStyle.sm]="{'top':'70%', 'left':'65%'}"><a href="http://localhost:4200/home" >Zobacz</a></div>
+        </div>
+</div>
